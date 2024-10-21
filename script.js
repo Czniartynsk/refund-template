@@ -120,6 +120,14 @@ function updateTotals() {
       items.length > 1 ? "despesas" : "despesa"
     }`
 
+    // Variável para incrementar o total.
+    let total = 0
+
+    for (let item = 0; item < items.length; item++) {
+      const itemAmount = items[item].querySelector(".expense-amount")
+
+      console.log(itemAmount)
+    }
   } catch (error) {
     console.log(error)
     alert("Não foi possível atualizar os totais.")
